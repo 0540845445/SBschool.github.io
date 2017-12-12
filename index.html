@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+<link rel="stylesheet" href="blueberry.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="demo/css/demostyles.css">
+        <link rel="stylesheet" href="css/simple-slideshow-styles.css">
+<style type="text/css">
+*{
+	margin:0;
+	border:0;
+	padding:0;
+}
+body{
+	background:#f0f0f0;
+	font:14px/20px arial,san-serif;
+	color:#555;
+	margin:0;
+	}
+h1
+{
+	text-align:center;
+	font-size:180%;
+	line-height:120%;
+	padding:5px 0;
+	}	
+h2{
+	text-decoration:underline;
+	line-height:280%;
+	padding:2%;
+	}
+h3{
+	line-height:110%;
+	padding:5% 0;
+	}
+p{
+	padding:1%;
+	}	
+img{
+	text-align:center;
+	max-width:100%;
+	height:auto;
+	width:auto;
+	}
+a{
+	color:#FFF;
+	text-decoration:none;
+	font-weight:bold;
+	}
+a:hover{
+	color:#FFF;
+	text-decoration:Underline;
+	}
+header{
+	
+background:#405580;
+width:100%;
+height:86px;
+position:fixed;
+top:0;
+left:0;
+z-index:100;
+opacity:0.90;	
+}
+#logo{
+	margin:20px;
+	float:left;
+	width:200px;
+	height:60px;
+	background:url(http://www.wenewbie.com/wp-content/uploads/the-gym.png) no-repeat center;
+	}
+	nav{
+		float:right;
+		padding:35px 20px 20px 0px;
+		}
+#menu-icon{
+	display:hidden;
+	width:40px;
+	height:40px;
+	background:url(http://www.wenewbie.com/wp-content/uploads/the-gym.png) center;
+	}
+a:hover#menu-icon{
+	border-rdius:4px 4px 0 0;
+	}
+ul{list-style:none;}
+nav ul li{
+	display:inline-block;
+	float:left;
+	padding:10px;
+	}
+.current{
+	color:#FFF;
+	text-decoration:underline;
+	}
+#doc{margin:40px 0;}
+#content{
+	margin:0 auto;
+	max-width:1140px;
+	}
+.blueberry{
+	max-width:960px;
+	mrgin-top:110px;
+	}
+section{
+	width:29%;
+	float:left;
+	margin:2% 2%;
+	text-align:center;
+	}
+.clear{clear:both;}
+article{
+	float:left;
+	margin:0 auto;
+	width:50%;
+	height:auto;
+	padding:4%;
+	}
+aside{
+	float:right;
+	margin:0 auto;
+	width:35%;
+	height:auto;
+	padding:3%;
+	}
+footer{
+	background:#333333;
+	width:100%;
+	overflow:hidden;
+	opacity:0.90;
+	}
+footer p,footer h3{
+	color:#FFF;
+	}
+footer p{
+	color:#FFF;
+	text-decoration:none;
+	}
+footer.second{
+	border-top:1px solid #4D4E50;
+	background-color:#333333;
+	max-height:50px;
+	text-align:center;
+	opacity:0.95;
+	}
+/*---------Media!!!----------*/
+@media screen and(max-width:478px){
+	body{position:absolute;}
+	}
+@media screen and(max-width:740px){
+	header{
+		position:absolute;
+		}
+	#menu-icon{
+		display:inline-block;
+		}
+	nav ul,nav:active ul{
+		dislpay:none;
+		position:absolute;
+		padding:20px;
+		background:#405580;
+		border:1px solid #FFF;
+		right:20px;
+		top:60px;
+		width:50px;
+		border-radius:2px 0 2px 2px;
+		
+		}
+	nav li{
+		text-align:center;
+		width:100%;
+		padding:10px 0;
+		margin:0;
+		}
+	nav:hover ul{
+		display:block;
+		}
+		section{
+			float:left;
+			width:100%;
+			margin:0;
+			padding:0;
+			}			
+			article{
+			float:left;
+			width:100%;
+			margin:0;
+			padding:0;
+			}			
+			aside{
+			float:left;
+			width:100%;
+			margin:0;
+			padding:0;
+			}				
+	}																			
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+</script>
+<script src="jquery.blueberry.js"></script>
+<script>
+$(window).load(function(){
+	$('.blueberry').blueberry();
+	});
+</script>
+</head>
+
+<body>
+    <header>
+    <a href="#" id="logo"></a>
+    <nav>
+       <ul>
+           <li><a href="indext.html" class="current">Home</a></li>
+           
+           <li><a href="events.html">Events</a></li>
+           <li><a href="about_us.html">ABOUT</a></li>
+           <li><a href="contact_us.html">CONTACT</a></li>
+           
+           
+       </ul>
+    </nav>
+    </header>
+   <div class="bss-slides num1" tabindex="1" autofocus="autofocus" style="margin-top:90px;">
+            <figure>
+		      <img src="images/c.jpg" style="width:1400px; height:450px;" /><figcaption>"Medium" by <a href="https://www.flickr.com/photos/thomashawk/14586158819/">Thomas Hawk</a>.</figcaption> 
+            </figure>
+            
+            <figure>
+		      <img src="images/banner_service-project.jpg" style="width:1400px; height:450px;" /><figcaption>"Early Morning at the Monte Vista Wildlife Refuge, Colorado" by <a href="https://www.flickr.com/photos/davesoldano/8572429635">Dave Soldano</a>.</figcaption> 
+            </figure>
+            <figure>
+		      <img src="images/IMG_5075.jpg" style="width:1400px; height:450px;" /><figcaption>"Sunrise in Eastern Colorado" by <a href="https://www.flickr.com/photos/35528040@N04/6673031153">Pam Morris</a>.</figcaption> 
+            </figure>
+            
+        </div>
+        <script src="demo/js/hammer.min.js"></script><!-- for swipe support on touch interfaces -->
+<script src="js/better-simple-slideshow.min.js"></script>
+<script>
+var opts = {
+    auto : {
+        speed : 3500, 
+        pauseOnHover : true
+    },
+    fullScreen : false, 
+    swipe : true
+};
+makeBSS('.num1', opts);
+
+var opts2 = {
+    auto : false,
+    fullScreen : true,
+    swipe : true
+};
+makeBSS('.num2', opts2);
+</script>
+    
+    <section style="background-color:#CCC;">
+    <img src="images/college-seo-guide.jpg" />
+    <h1>College Catagory</h1>
+    <p>San Bernardino High School is a public school, supporting grades 9 to 12 . It's located in San Bernardino, CA in San Bernardino County.<br><br><br></p>
+    </section>
+    <section style="background-color:#CCC;">
+    <img src="images/college-seo-guide.jpg" />
+    <h1>School Ranking</h1>
+    <p>San Bernardino High is unranked in the National Rankings. Schools are ranked based on their performance on state-required tests and how well they prepare students for college.College Board was the source of the Advanced Placement test data presented for schools, where applicable.</p>
+    </section>
+    <section style="background-color:#CCC;">
+    <img src="images/TD_Reception_with_Stiff_Arm.jpg" />
+    <h1>San Bernardino Football</h1>
+    <p>Relive' the 2017 San Bernardino Cardinals football season. MaxPreps has their 10 game schedule and results, including links to box scores, standings, stats, photos and video highlights.<br><br><br></p>
+    </section>
+    <div class="clear"></div>
+    <article>
+    <img src="images/College-students-websites.jpg">
+    </article>
+    <aside>
+    <h2>Our Group Class Schedule:</h2>
+    <ul>
+       <li><h3>Studio cycling at 8 a.m - 60 minutes</h3></li>
+       <li><h3>Studio cycling at 8 a.m - 60 minutes</h3></li>
+       <li><h3>Studio cycling at 8 a.m - 60 minutes</h3></li>
+       <li><h3>Studio cycling at 8 a.m - 60 minutes</h3></li>
+       <li><h3>Studio cycling at 8 a.m - 60 minutes</h3></li>
+    </ul>
+    
+    </aside>
+    <div class="clear"></div>
+    <footer>
+       <section>
+          <h3><b>Contact Us</b></h3>
+          <p><b>+1 123 45678910</b><br><br>
+          1850 N. E St., San Bernardino, California 92405
+          
+          </p>
+       </section>
+       <section>
+          <h3><b>Overview</b></h3>
+          <p>
+              At <b>San Bernardino High</b>, students have the opportunity to take Advanced Placement® course work and exams. The AP® participation rate at San Bernardino High is 53 percent.
+          </p>
+       </section>
+       <section>
+          <h3><b>Life at San Bernardino</b></h3>
+          <p>
+          Students can learn how to work together – and about the world around them – through filmmaking, experts say.There are affordable solutions to get students connected to the web at school and home.<br>
+          <br>
+          
+          </p>
+       </section>
+
+
+    
+    </footer>
+    <div class="clear"></div>
+    <footer class="second">
+      <p>@Copyright - The Practice,2017</p>
+    </footer>
+</body>
+</html>

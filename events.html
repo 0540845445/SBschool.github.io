@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Events</title>
+<link rel="stylesheet" href="blueberry.css">
+<style type="text/css">
+*{
+	margin:0;
+	border:0;
+	padding:0;
+}
+body{
+	background:#f0f0f0;
+	font:14px/20px arial,san-serif;
+	color:#555;
+	margin:0;
+	}
+h1
+{
+	text-align:center;
+	font-size:180%;
+	line-height:120%;
+	padding:5px 0;
+	}	
+h2{
+	text-decoration:none;
+	line-height:280%;
+	padding:2%;
+	color:#06C 
+	}
+h3{
+	padding:2% 0;
+	
+	}
+p{
+	padding:1%;
+	}	
+img{
+	text-align:center;
+	max-width:100%;
+	height:auto;
+	width:auto;
+	}
+a{
+	color:#FFF;
+	text-decoration:none;
+	font-weight:bold;
+	}
+a:hover{
+	color:#FFF;
+	text-decoration:Underline;
+	}
+header{
+	
+background:#405580;
+width:100%;
+height:86px;
+position:fixed;
+top:0;
+left:0;
+z-index:100;
+opacity:0.90;	
+}
+#logo{
+	margin:20px;
+	float:left;
+	width:200px;
+	height:60px;
+	background:url(http://www.wenewbie.com/wp-content/uploads/the-gym.png) no-repeat center;
+	}
+	nav{
+		float:right;
+		padding:35px 20px 20px 0px;
+		}
+#menu-icon{
+	display:hidden;
+	width:40px;
+	height:40px;
+	background:url(http://www.wenewbie.com/wp-content/uploads/the-gym.png) center;
+	}
+a:hover#menu-icon{
+	border-rdius:4px 4px 0 0;
+	}
+ul{list-style:none;}
+nav ul li{
+	display:inline-block;
+	float:left;
+	padding:10px;
+	}
+.current{
+	color:#FFF;
+	text-decoration:underline;
+	}
+#doc{margin:40px 0;}
+#content{
+	margin:0 auto;
+	max-width:1140px;
+	}
+.blueberry{
+	max-width:960px;
+	mrgin-top:110px;
+	}
+section{
+	width:29%;
+	float:left;
+	margin:2% 2%;
+	text-align:center;
+	}
+.clear{clear:both;}
+article{
+	float:left;
+	margin:0 auto;
+	width:50%;
+	height:auto;
+	padding:4%;
+	}
+aside{
+	float:right;
+	margin:0 auto;
+	width:35%;
+	height:auto;
+	padding:3%;
+	}
+footer{
+	background:#333333;
+	width:100%;
+	overflow:hidden;
+	opacity:0.90;
+	}
+footer p,footer h3{
+	color:#FFF;
+	}
+footer p{
+	color:#FFF;
+	text-decoration:none;
+	}
+footer.second{
+	border-top:1px solid #4D4E50;
+	background-color:#333333;
+	max-height:50px;
+	text-align:center;
+	opacity:0.95;
+	}
+	.news{width:1200px;}
+	* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    
+    background:#405580;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#CCC;
+	opacity:0.7;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #999;
+    margin: 0;
+	opacity:0.7;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+   background:#405580;
+    color: white !important
+}
+/*---------Media!!!----------*/
+@media screen and(max-width:478px){
+	body{position:absolute;}
+	}
+
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+@media screen and(max-width:740px){
+	header{
+		position:absolute;
+		}
+	#menu-icon{
+		display:inline-block;
+		}
+	nav ul,nav:active ul{
+		dislpay:none;
+		position:absolute;
+		padding:20px;
+		background:#405580;
+		border:1px solid #FFF;
+		right:20px;
+		top:60px;
+		width:50px;
+		border-radius:2px 0 2px 2px;
+		
+		}
+	nav li{
+		text-align:center;
+		width:100%;
+		padding:10px 0;
+		margin:0;
+		}
+	nav:hover ul{
+		display:block;
+		}
+		section{
+			float:left;
+			width:100%;
+			margin:0;
+			padding:0;
+			}			
+			article{
+			float:left;
+			width:100%;
+			margin:0;
+			padding:0;
+			}			
+			aside{
+			float:left;
+			width:100%;
+			margin:0;
+			padding:0;
+			}				
+	}																			
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+</script>
+<script src="jquery.blueberry.js"></script>
+<script>
+$(window).load(function(){
+	$('.blueberry').blueberry();
+	});
+</script>
+</head>
+
+<body>
+    <header>
+    <a href="#" id="logo"></a>
+    <nav>
+       <ul>
+           <li><a href="index.html" class="current">Home</a></li>
+           
+           <li><a href="events.html">Events</a></li>
+           <li><a href="about_us.html">ABOUT</a></li>
+            <li><a href="contact_us.html">CONTACT</a></li>
+           
+       </ul>
+    </nav>
+    </header>
+   <div style=" margin-top:70px;">
+   <br>
+   <img src="images/San_Bernardino_1.jpg" style="width:1400px; height:450px;">
+   </div>
+<section style="width:550px; margin-left:100px;">
+    <h2>EVENTS</h2>
+    <p><b>Connect With Other Alumni</b></p>
+    <p align="left">Students can learn how to work together – and about the world around them – through filmmaking, experts say.The event offers budding filmmakers a chance to network, learn about future educational opportunities, land scholarships and see their work on the big screen, says founder and filmmaker Andrew Jenks.<b>Click below to see photos from our recent events.</b></p>
+    <p>
+    
+    	<img src="images/download.jpg" alt=""  />
+		
+</p>
+    <p><img src="images/download%20(1).jpg"></p>
+</section>
+    <br><br><br><br>
+    <section class="month" style="width:530px;">
+            <ul>
+    <li class="prev">❮</li>
+    <li class="next">❯</li>
+    <li style="text-align:center">
+      December<br>
+      <span style="font-size:18px">2016</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">7</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul> 
+    </section>   
+<footer>
+       <section>
+          <h3><b>Contact Us</b></h3>
+          <p><b>+1 123 45678910</b><br><br>
+          1850 N. E St., San Bernardino, California 92405
+          
+          </p>
+       </section>
+       <section>
+          <h3><b>Overview</b></h3>
+          <p>
+              At <b>San Bernardino High</b>, students have the opportunity to take Advanced Placement® course work and exams. The AP® participation rate at San Bernardino High is 53 percent.
+          </p>
+       </section>
+       <section>
+          <h3><b>Life at San Bernardino</b></h3>
+          <p>
+          Students can learn how to work together – and about the world around them – through filmmaking, experts say.There are affordable solutions to get students connected to the web at school and home.<br>
+          <br>
+          
+          </p>
+       </section>
+
+
+    
+    </footer>
+    <div class="clear"></div>
+    <footer class="second">
+      <p>@Copyright - The Practice,2017</p>
+    </footer>
+</body>
+</html>
